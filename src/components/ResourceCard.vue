@@ -4,12 +4,12 @@
       <h1>
         {{ resource_card.topic }}
       </h1>
-      <img :src="resource_card.image" alt="picture" />
-      <h2>
-        <div>{{ resource_card.content }}</div>
-      </h2>
+      <img :src="resource_card.image" alt="none" />
+      <h4 class="content">
+        {{ resource_card.content }}
+      </h4>
       <h3 class="source">
-        SOURCE: <a href="#">{{ resource_card.link }} </a>
+        LINK: <a href="#">{{ resource_card.link }} </a>
       </h3>
     </div>
     <div class="showForm">
@@ -87,6 +87,7 @@ export default {
           }
         }
       );
+      location.reload();
       //   alert('Your update has been made!');
       //   window.location.reload;
       console.log(res);
@@ -169,5 +170,10 @@ a:hover {
   background-color: gray;
   color: white;
   cursor: pointer;
+}
+
+.content {
+  margin: 10px;
+  padding: 6px;
 }
 </style>
