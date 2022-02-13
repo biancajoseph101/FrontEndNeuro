@@ -71,7 +71,6 @@ img {
   padding: 5px;
   display: flex;
   flex-direction: column;
-
   width: 100%;
   color: rgba(161, 255, 255, 0.568);
   max-height: 200px;
@@ -89,8 +88,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  background: rgba(29, 82, 110, 255);
-  border-radius: 10px;
+  /* background: rgba(50, 53, 53, 0.712); */
+  border-radius: 8px;
   text-transform: initial;
   padding: 20px;
 }

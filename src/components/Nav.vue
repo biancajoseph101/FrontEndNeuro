@@ -1,46 +1,30 @@
 <template>
   <div class="nav">
     <div class="left">
-      <div class="item">
-        <router-link to="/login" name="Login" class="item"> Login </router-link>
-      </div>
-      <div class="item">
-        <router-link to="/articles" class="item" name="articles">
-          FEATURED
-        </router-link>
-      </div>
-      <div class="item">
-        <router-link to="/news" name="news" class="item">
-          NeuroNews
-        </router-link>
-      </div>
-
-      <!-- <router-link to="/" name="Home"
-        ><img class="logo" src="https://i.imgur.com/QxQny93.png"
-      /></router-link> -->
-    </div>
-    <div class="middle">
-      <!-- <div class="item">
-        <router-link to="/login" name="Login" class="item">
-          Login |
-        </router-link>
-      </div>
-      <div class="item">
-        <router-link to="/news" name="news" class="item">
-          Latest NeuroNews |
-        </router-link>
-      </div>
-      <div class="item">
-        <router-link to="/articles" class="item" name="articles">
-          BLOG |</router-link
-        >
-      </div> -->
-      <!-- <div class="item">
-        <router-link to="/about" class="item" name="about"> About </router-link>
-      </div> -->
       <router-link to="/" name="Home"
         ><img class="logo" src="https://i.imgur.com/QxQny93.png"
       /></router-link>
+    </div>
+    <div class="middle">
+      <div class="item">
+        <router-link to="/login" name="Login" class="item">
+          Login|
+        </router-link>
+      </div>
+      <div class="item">
+        <router-link to="/news" name="news" class="item">
+          Neuronews|
+        </router-link>
+      </div>
+      <div class="item">
+        <router-link to="/articles" class="item" name="articles">
+          Research
+        </router-link>
+      </div>
+      <!-- <div class="item">
+        <router-link to="/about" class="item" name="about"> About </router-link>
+      </div> -->
+
       <!-- <div class="item">
         <router-link to="/createpost" name="post" class="nav-btn">
           Post</router-link
@@ -77,7 +61,8 @@ export default {
   position: relative;
   z-index: 100;
   /* background-color: rgba(29, 82, 110, 255); */
-  background-color: rgba(16, 82, 102, 0.767);
+  /* background-color: rgba(16, 82, 102, 0.767); */
+  background-color: rgba(7, 27, 54, 255);
 }
 .item {
   font-size: 30px;
@@ -135,7 +120,7 @@ a {
 } */
 .item:hover {
   font-weight: bolder;
-  color: rgb(115, 201, 235);
+  color: rgba(44, 212, 212, 0.808);
 }
 
 .resource-drop {

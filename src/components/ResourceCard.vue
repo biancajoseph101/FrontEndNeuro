@@ -116,7 +116,7 @@ export default {
 img {
   display: flex;
   opacity: 900%;
-  max-height: 100px;
+  max-height: 130px;
   margin: 5px;
   justify-content: flex-start;
   border-radius: 5px;
@@ -129,15 +129,16 @@ img {
 .container {
   display: grid;
   grid-template-columns: 1, 1fr;
-  /* grid-template-rows: 3, 1fr; */
-  /* grid-auto-columns: auto; */
+
   align-items: center;
   margin: 20px;
   color: rgba(255, 255, 255, 0.74);
 }
 
 .resource-container {
-  background: #ffffff41;
+  background: #85e1e7bd;
+  border-radius: 8px;
+  box-shadow: 20px 20px #498ab363;
 }
 .top {
   display: flex;
@@ -177,7 +178,7 @@ img {
   color: rgba(255, 255, 255, 0.945);
 }
 a {
-  color: rgb(255, 255, 255);
+  color: rgb(21, 69, 88);
   padding: 10px;
 }
 a:hover {
@@ -187,7 +188,6 @@ a:hover {
 .source {
   background-color: rgba(230, 218, 218, 0.425);
   padding: 10px;
-  color: white;
   border-radius: 12px;
   max-height: 75px;
   max-width: 600px;

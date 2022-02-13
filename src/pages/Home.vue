@@ -174,7 +174,7 @@ button {
   margin-bottom: 20px;
   font-size: 100px;
   opacity: 80%;
-  background-image: linear-gradient(to right, #ba7ef39c, #91ceeb, #8ecacb);
+  background-image: linear-gradient(to right, #ecf5d49c, #91ceeb, #8ecacb);
   color: white;
   border: 3px solid rgba(255, 255, 255, 0.644);
 }
@@ -207,7 +207,7 @@ img {
   margin-top: 20px;
   max-height: 290px;
   /* border: 14px solid rgba(173, 231, 248, 0.582); */
-  border: 14px solid rgba(141, 105, 224, 0.479);
+  border: 14px solid rgba(23, 56, 78, 0.658);
   border-radius: 10px;
 }
 img:hover {
