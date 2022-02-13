@@ -1,9 +1,9 @@
 <template>
   <div v-if="resourceDetails">
     <div class="type-name">
-      {{ resourceDetails.resource_type }}
-      {{ resourceDetails.description }}
-      <img :src="resourceDetails.picture" alt="image" />
+      <h2 class="type">{{ resourceDetails.resource_type }}</h2>
+      <h4>{{ resourceDetails.description }}</h4>
+      <!-- <img :src="resourceDetails.picture" alt="image" /> -->
     </div>
     <div class="card-container">
       <div
@@ -56,29 +56,31 @@ export default {
 
 <style scoped>
 img {
-  max-height: 200px;
+  max-height: 100px;
   border-radius: 4px;
 }
 
-/* .type-name {
-  font-size: 75px;
-  display: flex;
-  justify-content: center;
-} */
-.type-name {
+.type {
   margin-top: 50px;
   padding-top: 5px;
-  display: flex;
   font-size: 100px;
-  justify-content: space-around;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.type-name {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start;
+  justify-content: space-around; */
   width: 100%;
   color: rgba(161, 255, 255, 0.568);
-  max-height: 300px;
+  max-height: 200px;
 }
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: auto;
   grid-gap: 1rem;
 }

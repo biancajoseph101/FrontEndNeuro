@@ -117,7 +117,7 @@ a {
   margin: 0px;
 }
 .logo {
-  max-width: 230px;
+  max-width: 210px;
   margin: 5px;
   border-radius: 50%;
 }

@@ -37,8 +37,8 @@ body,
 html {
   padding: 0;
   margin: 0;
-  background-color: rgba(7, 27, 54, 255);
-
+  /* background-color: rgba(7, 27, 54, 255); */
+  background-color: rgb(4, 7, 39);
   width: 100%;
   min-height: 100%;
 }

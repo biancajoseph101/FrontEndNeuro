@@ -1,17 +1,20 @@
 <template>
   <div class="resource-container">
     <div class="container">
-      <h1>
-        {{ resource_card.topic }}
-      </h1>
-      <img :src="resource_card.image" alt="none" />
+      <div class="top">
+        <h2>
+          {{ resource_card.topic }}
+        </h2>
+        <img :src="resource_card.image" alt="none" />
+      </div>
       <h4 class="content">
         {{ resource_card.content }}
       </h4>
-      <h3 class="source">
-        LINK: <a href="#">{{ resource_card.link }} </a>
-      </h3>
     </div>
+
+    <h3 class="source">
+      LINK: <a href="#">{{ resource_card.link }} </a>
+    </h3>
     <div class="showForm">
       <button @click="showForm = !showForm" class="updateBtn">edit</button>
       <div v-if="showForm" class="form-container">
@@ -115,25 +118,31 @@ export default {
 
 <style scoped>
 img {
+  display: flex;
   opacity: 900%;
-  max-height: 200px;
-  margin: 20px;
-  justify-content: center;
-  border-radius: 10px;
+  max-height: 100px;
+  margin: 5px;
+  justify-content: flex-start;
+  border-radius: 5px;
 }
 .showForm {
   visibility: visible;
   display: flex;
   align-items: start;
 }
-/* .container {
+.container {
   display: grid;
-  grid-template-columns: 1;
+  grid-template-columns: 1, 1fr;
+  /* grid-template-rows: 3, 1fr; */
+  /* grid-auto-columns: auto; */
   align-items: center;
   margin: 20px;
   color: white;
-} */
-
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+}
 .submitBtn,
 .updateBtn {
   width: 80px;

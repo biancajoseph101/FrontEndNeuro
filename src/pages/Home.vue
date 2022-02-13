@@ -120,7 +120,7 @@ export default {
   overflow: 1;
   /* background-color: rgba(182, 169, 169, 0.164); */
   padding-bottom: 10px;
-  background-color: rgba(90, 89, 89, 0.349);
+  background-color: rgba(7, 27, 54, 255);
   /* padding-top: 20px; */
 }
 .neurohacks {
@@ -128,7 +128,6 @@ export default {
   margin-top: 20px;
   margin-bottom: 10px;
   text-decoration: underline;
-
   font-size: 60px;
   padding: 15px;
   margin-left: 50px;

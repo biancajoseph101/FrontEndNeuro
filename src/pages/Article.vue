@@ -7,7 +7,6 @@
         <h1>{{ tag.title }}</h1>
 
         <img :src="tag.image_url" />
-
         <div :class="{ readLess: readMore == true }" class="content">
           <h3>{{ tag.content }}</h3>
         </div>
