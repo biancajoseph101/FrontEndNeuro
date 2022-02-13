@@ -78,7 +78,6 @@ button:hover {
   flex-wrap: wrap;
   justify-content: space-around;
   background: rgba(29, 82, 110, 255);
-  border-radius: 10px;
   text-transform: initial;
   padding: 20px;
   max-width: 500px;
@@ -98,7 +97,7 @@ button:hover {
   /* max-width: 900px; */
   display: flex;
   flex-direction: row;
-  flex: 1 1 auto;
+  flex: 2 1 auto;
   justify-content: space-between;
   flex-wrap: wrap;
 }

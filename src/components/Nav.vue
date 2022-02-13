@@ -62,6 +62,7 @@ export default {
   position: relative;
   z-index: 100;
   background-color: rgba(29, 82, 110, 255);
+  /* background-color: rgba(10, 168, 173, 0.658); */
 }
 .item {
   font-size: 30px;

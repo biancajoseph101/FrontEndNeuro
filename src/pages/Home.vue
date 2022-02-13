@@ -1,10 +1,16 @@
 <template>
   <div>
-    <div>
-      <h1>Latest in NEuro news</h1>
+    <div class="header">
+      <!-- <img class="brain-pic" src="https://i.imgur.com/RBYkJmr.jpg" /> -->
+      <h5 class="intro">Welcome to NeuroNerd</h5>
+      <h2 class="welcome">
+        Explore the Brain <br />
+        with Us
+      </h2>
     </div>
+
     <div class="carousel">
-      <h2>#NEUROHACKS</h2>
+      <h2 class="neurohacks">#NEUROHACKS</h2>
       <div class="inner" ref="inner" :style="innerStyles">
         <div class="hack" v-for="hack in hacks" :key="hack.id">
           <img :src="hack.image" alt="image" />
@@ -110,38 +116,68 @@ export default {
 .carousel {
   overflow: 1;
   /* background-color: rgba(182, 169, 169, 0.164); */
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  background-color: rgba(90, 89, 89, 0.349);
   /* padding-top: 20px; */
 }
-h2 {
-  margin-top: 50px;
-  padding-top: 5px;
+.neurohacks {
   display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
   font-size: 60px;
-  justify-content: space-around;
+  padding: 15px;
+  margin-left: 50px;
+  /* justify-content: space-around; */
   width: 100%;
-  color: #94eee58c;
+  color: rgba(255, 255, 255, 0.589);
+}
+
+.intro {
+  padding-top: 70px;
+  display: flex;
+  margin-bottom: 10px;
+  font-size: 28px;
+  margin-left: 100px;
+  color: rgba(255, 255, 255, 0.842);
+  text-transform: initial;
+}
+.welcome {
+  display: flex;
+  margin-left: 90px;
+  margin-top: 40px;
+  justify-content: start;
+  color: white;
+  text-transform: initial;
+  max-width: 500px;
+  font-size: 90px;
+  position: absolute;
+  text-shadow: 34px 25px 5px rgba(255, 255, 255, 0.116);
 }
 .buttons {
-  margin-top: 80px;
+  margin-top: 30px;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  margin-left: 33%;
+  /* justify-content: space-around; */
 }
 
 button {
   min-width: 300px;
-  min-height: 100px;
-  border-radius: 30px;
+  min-height: 80px;
+  border-radius: 20px;
+  margin: 5px;
+  margin-bottom: 20px;
   font-size: 100px;
   opacity: 80%;
-  background-image: linear-gradient(to right, #1a4344, #3b9698, #8ecacb);
+  background-image: linear-gradient(to right, #ba7ef39c, #91ceeb, #8ecacb);
   color: white;
   border: 3px solid rgb(0, 52, 82);
 }
 button:hover {
   font-weight: bolder;
   cursor: pointer;
-  background: rgba(255, 255, 255, 0.747);
+  background: rgba(255, 255, 255, 0.877);
 }
 
 .inner {
@@ -163,15 +199,25 @@ button:hover {
 }
 
 img {
-  margin-top: 50px;
+  margin-top: 20px;
   max-height: 290px;
-  border: 14px solid rgba(173, 231, 248, 0.582);
+  /* border: 14px solid rgba(173, 231, 248, 0.582); */
+  border: 14px solid rgba(108, 59, 223, 0.616);
   border-radius: 30px;
 }
 img:hover {
-  border: 14px solid rgb(173, 231, 248);
+  border: 14px solid rgb(99, 28, 231);
   border-radius: 30px;
   transform: scale(1.2);
   filter: brightness(110%);
+}
+
+.header {
+  background-image: url('https://i.imgur.com/RBYkJmr.jpg');
+  background-size: 1990px;
+  background-repeat: no-repeat;
+  height: 650px;
+  opacity: 0.9;
+  color: white;
 }
 </style>
