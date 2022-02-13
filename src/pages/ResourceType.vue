@@ -71,8 +71,7 @@ img {
   padding: 5px;
   display: flex;
   flex-direction: column;
-  /* align-items: flex-start;
-  justify-content: space-around; */
+
   width: 100%;
   color: rgba(161, 255, 255, 0.568);
   max-height: 200px;

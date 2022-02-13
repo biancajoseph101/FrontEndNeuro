@@ -5,16 +5,16 @@
         <h2>
           {{ resource_card.topic }}
         </h2>
-        <img :src="resource_card.image" alt="none" />
+        <img :src="resource_card.image" />
       </div>
       <h4 class="content">
         {{ resource_card.content }}
       </h4>
     </div>
 
-    <h3 class="source">
-      LINK: <a href="#">{{ resource_card.link }} </a>
-    </h3>
+    <h5 class="source">
+      <a href="#">{{ resource_card.link }} </a>
+    </h5>
     <div class="showForm">
       <button @click="showForm = !showForm" class="updateBtn">edit</button>
       <div v-if="showForm" class="form-container">
@@ -33,10 +33,10 @@
             type="text"
             v-on:input="handleContentChange"
           />
-
-          <button @click="deleteResource" class="deleteBtn">x</button>
-
-          <button @click="updateResource" class="submitBtn">submit</button>
+          <div class="buttons">
+            <button @click="updateResource" class="submitBtn">submit</button>
+            <button @click="deleteResource" class="deleteBtn">x</button>
+          </div>
         </form>
       </div>
       <div v-else></div>
@@ -74,8 +74,6 @@ export default {
     handleFormChange(e) {
       this[e.target.name] = e.target.value;
       this.newTopic = e.target.value;
-      //   console.log(resource_type);
-      //   console.log(this.newTopic);
     },
     handleContentChange(e) {
       this[e.target.name] = e.target.value;
@@ -108,9 +106,7 @@ export default {
       );
       location.reload();
       //   alert('Your update has been made!');
-      //   window.location.reload;
       console.log(res);
-      //   this.$router.push(`/resources/${res.data.id}`);
     }
   }
 };
@@ -137,11 +133,17 @@ img {
   /* grid-auto-columns: auto; */
   align-items: center;
   margin: 20px;
-  color: white;
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.resource-container {
+  background: #ffffff41;
 }
 .top {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 30px;
+  border-bottom: 2px solid white;
 }
 .submitBtn,
 .updateBtn {
@@ -188,17 +190,35 @@ a:hover {
   color: white;
   border-radius: 12px;
   max-height: 75px;
-  max-width: 700px;
-  white-space: pre-line;
+  max-width: 600px;
+  margin-left: 3px;
+  margin-right: 3px;
 }
 .deleteBtn:hover {
   background-color: gray;
   color: white;
   cursor: pointer;
 }
-
+input {
+  max-width: 300px;
+  max-height: 40px;
+}
 .content {
   margin: 10px;
   padding: 6px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid white;
+}
+h2 {
+  font-size: 34px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
 }
 </style>

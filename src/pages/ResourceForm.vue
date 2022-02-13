@@ -58,6 +58,7 @@
                 v-on:input="handleFormChange"
               />
               <input
+                class="content"
                 placeholder="Content"
                 :value="content"
                 name="content"
