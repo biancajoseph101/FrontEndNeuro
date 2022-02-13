@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Weekly Featured Articles</h2>
+    <h2>Featured Articles</h2>
     <div class="container">
       <div class="article" v-for="tag in tag_array" :key="tag.id">
         <h4>{{ tag.date }}</h4>
@@ -116,7 +116,7 @@ img {
 }
 
 h2 {
-  margin-top: 50px;
+  margin-top: 5px;
   padding-top: 5px;
   display: flex;
   font-size: 60px;

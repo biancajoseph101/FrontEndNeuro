@@ -8,7 +8,7 @@
     <div class="middle">
       <div class="item">
         <router-link to="/login" name="Login" class="item">
-          Login|
+          Account|
         </router-link>
       </div>
       <div class="item">
@@ -80,7 +80,7 @@ export default {
   text-align: left;
   display: flex;
   flex-direction: column;
-  max-width: 900px;
+  max-width: 800px;
   margin-left: 20px;
 }
 .middle {
