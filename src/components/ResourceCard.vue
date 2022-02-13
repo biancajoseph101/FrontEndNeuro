@@ -17,12 +17,20 @@
       <div v-if="showForm" class="form-container">
         <form>
           <input
-            placeholder="Edit topic"
+            placeholder="Edit Topic"
             :value="newTopic"
             name="newTopic"
             type="text"
             v-on:input="handleFormChange"
           />
+          <input
+            placeholder="Edit Content"
+            :value="newContent"
+            name="newContent"
+            type="text"
+            v-on:input="handleContentChange"
+          />
+
           <button @click="deleteResource" class="deleteBtn">x</button>
 
           <button @click="updateResource" class="submitBtn">submit</button>
@@ -40,7 +48,9 @@ export default {
   data: () => ({
     showForm: false,
     topic: '',
-    newTopic: ''
+    newTopic: '',
+    content: '',
+    newContent: ''
   }),
   props: {
     resource_card: Object
@@ -64,6 +74,11 @@ export default {
       //   console.log(resource_type);
       //   console.log(this.newTopic);
     },
+    handleContentChange(e) {
+      this[e.target.name] = e.target.value;
+
+      this.newContent = e.target.value;
+    },
 
     async updateResource(e) {
       e.preventDefault();
@@ -78,6 +93,7 @@ export default {
         {
           showForm: true,
           topic: this.newTopic,
+          content: this.newContent,
           resource_type: list
         },
         {

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Articles</h2>
+    <h2>Weekly Featured Articles</h2>
     <div class="container">
       <div class="article" v-for="tag in tag_array" :key="tag.id">
         <h4>{{ tag.date }}</h4>

@@ -5,15 +5,16 @@
         <router-link to="/login" name="Login" class="item"> Login </router-link>
       </div>
       <div class="item">
+        <router-link to="/articles" class="item" name="articles">
+          FEATURED
+        </router-link>
+      </div>
+      <div class="item">
         <router-link to="/news" name="news" class="item">
           NeuroNews
         </router-link>
       </div>
-      <div class="item">
-        <router-link to="/articles" class="item" name="articles">
-          BLOG
-        </router-link>
-      </div>
+
       <!-- <router-link to="/" name="Home"
         ><img class="logo" src="https://i.imgur.com/QxQny93.png"
       /></router-link> -->
