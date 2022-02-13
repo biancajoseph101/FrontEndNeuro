@@ -152,6 +152,9 @@ a {
   color: rgb(255, 255, 255);
   padding: 10px;
 }
+a:hover {
+  text-decoration: underline;
+}
 
 .source {
   background-color: rgba(230, 218, 218, 0.425);

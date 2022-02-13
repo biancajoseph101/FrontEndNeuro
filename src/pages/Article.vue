@@ -54,6 +54,9 @@ export default {
 a {
   color: rgb(11, 63, 87);
 }
+a:hover {
+  text-decoration: underline;
+}
 
 button {
   width: 510px;

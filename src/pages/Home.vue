@@ -17,8 +17,8 @@
         </div>
       </div>
       <div class="buttons">
-        <div class="righty"><button @click="right">⇷</button></div>
-        <div><button @click="left">⇸</button></div>
+        <div class="righty"><button @click="right">«</button></div>
+        <div><button @click="left">»</button></div>
       </div>
     </div>
   </div>
@@ -33,15 +33,18 @@ export default {
       hacks: [
         { image: 'https://i.imgur.com/t01bQdt.jpg' },
         { image: 'https://i.imgur.com/o03K3UB.jpg' },
+        { image: 'https://i.imgur.com/NT6w1Ih.jpg' },
         { image: 'https://i.imgur.com/V4Ryul8.jpg' },
         { image: 'https://i.imgur.com/2INuJiB.jpg' },
+
         { image: 'https://i.imgur.com/5gA4zSC.jpg' },
         { image: 'https://i.imgur.com/LjvZicZ.jpg' },
+        { image: 'https://i.imgur.com/t01bQdt.jpg' },
         { image: 'https://i.imgur.com/DtAQkfA.jpg' },
         { image: 'https://i.imgur.com/QTiVW3v.jpg' },
-        { image: 'https://i.imgur.com/RGKPZP1.jpg' },
         { image: 'https://i.imgur.com/NT6w1Ih.jpg' },
-        { image: 'https://i.imgur.com/3bVkk0k.jpg' }
+        { image: 'https://i.imgur.com/3bVkk0k.jpg' },
+        { image: 'https://i.imgur.com/RGKPZP1.jpg' }
       ],
       articles: [],
       innerStyles: {},
@@ -123,14 +126,15 @@ export default {
 .neurohacks {
   display: flex;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  text-decoration: underline;
 
   font-size: 60px;
   padding: 15px;
   margin-left: 50px;
   /* justify-content: space-around; */
   width: 100%;
-  color: rgba(255, 255, 255, 0.589);
+  color: rgba(160, 232, 245, 0.692);
 }
 
 .intro {
@@ -163,16 +167,17 @@ export default {
 }
 
 button {
-  min-width: 300px;
-  min-height: 80px;
-  border-radius: 20px;
+  width: 260px;
+  height: 120px;
+  border-radius: 25px;
+  margin-bottom: 65px;
   margin: 5px;
   margin-bottom: 20px;
   font-size: 100px;
   opacity: 80%;
   background-image: linear-gradient(to right, #ba7ef39c, #91ceeb, #8ecacb);
   color: white;
-  border: 3px solid rgb(0, 52, 82);
+  border: 3px solid rgba(255, 255, 255, 0.644);
 }
 button:hover {
   font-weight: bolder;
@@ -188,7 +193,8 @@ button:hover {
 .hack {
   width: 300px;
   height: 350px;
-  margin-right: 100px;
+  /* margin-left: 70px; */
+  margin-right: 70px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -202,12 +208,12 @@ img {
   margin-top: 20px;
   max-height: 290px;
   /* border: 14px solid rgba(173, 231, 248, 0.582); */
-  border: 14px solid rgba(108, 59, 223, 0.616);
-  border-radius: 30px;
+  border: 14px solid rgba(141, 105, 224, 0.479);
+  border-radius: 10px;
 }
 img:hover {
-  border: 14px solid rgb(99, 28, 231);
-  border-radius: 30px;
+  border: 14px solid rgb(111, 55, 216);
+  border-radius: 10px;
   transform: scale(1.2);
   filter: brightness(110%);
 }

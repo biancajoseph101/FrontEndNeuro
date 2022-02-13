@@ -101,6 +101,10 @@ export default {
   max-width: 700px;
   white-space: pre-line;
 }
+
+.source:hover {
+  text-decoration: underline;
+}
 img {
   max-height: 200px;
   border-radius: 7px 7px 0 0;

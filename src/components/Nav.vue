@@ -1,31 +1,45 @@
 <template>
   <div class="nav">
     <div class="left">
-      <router-link to="/" name="Home"
-        ><img class="logo" src="https://i.imgur.com/QxQny93.png"
-      /></router-link>
-    </div>
-    <div class="middle">
       <div class="item">
-        <router-link to="/login" name="Login" class="item">
-          Login •
-        </router-link>
+        <router-link to="/login" name="Login" class="item"> Login </router-link>
       </div>
       <div class="item">
         <router-link to="/news" name="news" class="item">
-          • Latest NeuroNews •
+          NeuroNews
         </router-link>
       </div>
       <div class="item">
         <router-link to="/articles" class="item" name="articles">
-          • Community •</router-link
-        >
-      </div>
-      <div class="item">
-        <router-link to="/about" class="item" name="about">
-          • About
+          BLOG
         </router-link>
       </div>
+      <!-- <router-link to="/" name="Home"
+        ><img class="logo" src="https://i.imgur.com/QxQny93.png"
+      /></router-link> -->
+    </div>
+    <div class="middle">
+      <!-- <div class="item">
+        <router-link to="/login" name="Login" class="item">
+          Login |
+        </router-link>
+      </div>
+      <div class="item">
+        <router-link to="/news" name="news" class="item">
+          Latest NeuroNews |
+        </router-link>
+      </div>
+      <div class="item">
+        <router-link to="/articles" class="item" name="articles">
+          BLOG |</router-link
+        >
+      </div> -->
+      <!-- <div class="item">
+        <router-link to="/about" class="item" name="about"> About </router-link>
+      </div> -->
+      <router-link to="/" name="Home"
+        ><img class="logo" src="https://i.imgur.com/QxQny93.png"
+      /></router-link>
       <!-- <div class="item">
         <router-link to="/createpost" name="post" class="nav-btn">
           Post</router-link
@@ -61,8 +75,8 @@ export default {
   min-height: 100px;
   position: relative;
   z-index: 100;
-  background-color: rgba(29, 82, 110, 255);
-  /* background-color: rgba(10, 168, 173, 0.658); */
+  /* background-color: rgba(29, 82, 110, 255); */
+  background-color: rgba(16, 82, 102, 0.767);
 }
 .item {
   font-size: 30px;
@@ -78,14 +92,17 @@ export default {
 }
 .left {
   text-align: left;
-  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin-left: 20px;
 }
 .middle {
   display: flex;
-  flex-wrap: wrap;
-  text-align: left;
+  /* flex-wrap: wrap; */
   padding-bottom: 20px;
-  align-items: center;
+  align-items: flex-start;
+  margin-top: 0px;
 }
 .right {
   max-width: 300px;
@@ -95,8 +112,11 @@ export default {
 .hamburger {
   font-size: 45px;
 }
+a {
+  margin: 0px;
+}
 .logo {
-  max-width: 200px;
+  max-width: 230px;
   margin: 5px;
   border-radius: 50%;
 }
@@ -114,7 +134,7 @@ export default {
 } */
 .item:hover {
   font-weight: bolder;
-  color: rgb(0, 38, 82);
+  color: rgb(115, 201, 235);
 }
 
 .resource-drop {

@@ -1,5 +1,5 @@
 <template lang="html">
-  <form class="login form">
+  <form class="login-form">
     <div class="field">
       <label for="id_username">Username</label>
       <input
@@ -50,8 +50,31 @@ export default {
 
 <style>
 input {
+  width: 650px;
+  height: 60px;
+  margin: 10px;
+  font-size: 20px;
+}
+
+button {
   width: 500px;
   height: 60px;
   margin: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+button:hover {
+  background-color: #3b9698;
+
+  color: white;
+  cursor: pointer;
 }
 </style>

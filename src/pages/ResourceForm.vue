@@ -138,6 +138,7 @@ export default {
         }
       );
       alert('Your submission has been posted!');
+      location.reload();
       console.log(res);
       //   this.$router.push(`/resources/${res.data.id}`);
     }
