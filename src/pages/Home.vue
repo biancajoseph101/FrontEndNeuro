@@ -5,7 +5,7 @@
       <h5 class="intro">Welcome to NeuroNerd</h5>
       <h2 class="welcome">
         Explore the Brain <br />
-        with Us
+        with Me
       </h2>
     </div>
 
@@ -139,7 +139,7 @@ export default {
 .intro {
   padding-top: 70px;
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   font-size: 28px;
   margin-left: 100px;
   color: rgba(255, 255, 255, 0.842);
@@ -147,8 +147,8 @@ export default {
 }
 .welcome {
   display: flex;
-  margin-left: 90px;
-  margin-top: 40px;
+  margin-left: 80px;
+  margin-top: 20px;
   justify-content: start;
   color: white;
   text-transform: initial;

@@ -61,8 +61,8 @@ export default {
   position: relative;
   z-index: 100;
   /* background-color: rgba(29, 82, 110, 255); */
-  /* background-color: rgba(16, 82, 102, 0.767); */
-  background-color: rgba(7, 27, 54, 255);
+  background-color: rgba(16, 82, 102, 0.767);
+  /* background-color: rgba(7, 27, 54, 255); */
 }
 .item {
   font-size: 30px;
