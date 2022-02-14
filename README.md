@@ -46,9 +46,11 @@ A website dedicated to those interested in neuroscience including latest news, i
 
 ### **_Screenshots_**
 
-![Image](https://i.imgur.com/C9msjjV.png)
+![Image](https://i.imgur.com/qgMLwos.png)
 
-![Image](https://i.imgur.com/Vc0wXHY.png)
+![Image](https://i.imgur.com/FBHXQOC.png)
+
+![Image](https://i.imgur.com/UzUaet7.png)
 
 ---
 

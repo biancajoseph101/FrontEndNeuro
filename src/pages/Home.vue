@@ -144,15 +144,17 @@ export default {
   margin-left: 100px;
   color: rgba(255, 255, 255, 0.842);
   text-transform: initial;
+  font-style: italic;
 }
 .welcome {
   display: flex;
   margin-left: 80px;
-  margin-top: 20px;
+  margin-top: 40px;
   justify-content: start;
   color: white;
   text-transform: initial;
   max-width: 500px;
+  /* font-style: italic; */
   font-size: 90px;
   position: absolute;
   text-shadow: 34px 25px 5px rgba(255, 255, 255, 0.116);
