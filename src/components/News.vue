@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="news-header">LATEST IN NEURONEWS</h1>
-    <!-- <div class="container">
+    <div class="container">
       <div class="news-card">
         <h1>{{ news[9].title }}</h1>
         <h5>Author: {{ news[9].author }} | {{ news[9].publishedAt }}</h5>
@@ -45,30 +45,44 @@
         <h5>{{ news[15].description }}</h5>
         <h5 class="source">source: {{ news[15].url }}</h5>
       </div>
-    </div> -->
+      <div class="news-card">
+        <h1>{{ news[14].title }}</h1>
+        <h5>Author: {{ news[14].author }} | {{ news[14].publishedAt }}</h5>
+        <img :src="news[14].urlToImage" />
+        <h5>{{ news[14].description }}</h5>
+        <h5 class="source">source: {{ news[14].url }}</h5>
+      </div>
+      <div class="news-card">
+        <h1>{{ news[18].title }}</h1>
+        <h5>Author: {{ news[18].author }} | {{ news[18].publishedAt }}</h5>
+        <img :src="news[18].urlToImage" />
+        <h5>{{ news[18].description }}</h5>
+        <h5 class="source">source: {{ news[18].url }}</h5>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-// import axios from 'axios';
+import axios from 'axios';
 // const API_KEY = process.env.VUE_APP_API_KEY;
 export default {
-  name: 'News'
-  // data: () => ({
-  //   news: Object
-  // }),
-  // mounted() {
-  //   this.getNews();
-  // },
-  // methods: {
-  //   async getNews() {
-  //     const res = await axios.get(
-  //       `https://newsapi.org/v2/everything?q=neuroscience&apiKey=9b14a33f320e44b8a1906e3619bb679f`
-  //     );
-  //     this.news = res.data.articles;
-  //     // console.log(this.news);
-  //   }
-  // }
+  name: 'News',
+  data: () => ({
+    news: Object
+  }),
+  mounted() {
+    this.getNews();
+  },
+  methods: {
+    async getNews() {
+      const res = await axios.get(
+        `https://newsapi.org/v2/everything?q=neuroscience&apiKey=9b14a33f320e44b8a1906e3619bb679f`
+      );
+      this.news = res.data.articles;
+      // console.log(this.news);
+    }
+  }
 };
 </script>
 
@@ -104,6 +118,7 @@ export default {
 
 .source:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 img {
   max-height: 200px;

@@ -3,7 +3,6 @@
     <div class="type-name">
       <h2 class="type">{{ resourceDetails.resource_type }}</h2>
       <h4>{{ resourceDetails.description }}</h4>
-      <!-- <img :src="resourceDetails.picture" alt="image" /> -->
     </div>
     <div class="card-container">
       <div
@@ -22,7 +21,6 @@
 </template>
 
 <script>
-// import { defineComponent } from '@vue/composition-api'
 import axios from 'axios';
 import ResourceCard from '../components/ResourceCard.vue';
 export default {

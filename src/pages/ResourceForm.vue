@@ -27,13 +27,6 @@
               <span class="hide">selected types: {{ selectedTypes }}</span>
             </div>
           </div>
-          <!-- <input
-            placeholder="Resource Type"
-            :value="resource_type"
-            name="resource_type"
-            type="resource_type"
-            v-on:input="handleFormChange"
-          /> -->
           <div>
             <div class="flex">
               <input
@@ -96,13 +89,9 @@ export default {
     async getResourceTypes() {
       const res = await axios.get(`http://localhost:8000/resourcetypes/`);
       this.resourceTypes = res.data;
-
-      //   console.log(this.resourceTypes);
     },
 
     handleFormChange(e) {
-      //   console.log('apple');
-      //   console.log(e.target.value);
       this[e.target.name] = e.target.value;
     },
 
@@ -116,7 +105,6 @@ export default {
 
       this.selectedTypes.push(e.target.value);
       this.resource_type = this.selectedTypes;
-      //   console.log(this.resource_type);
     },
 
     async handleSubmit(e) {
@@ -141,7 +129,6 @@ export default {
       alert('Your submission has been posted!');
       location.reload();
       console.log(res);
-      //   this.$router.push(`/resources/${res.data.id}`);
     }
   }
 };

@@ -4,13 +4,7 @@
       <form @submit="handleSubmit">
         <div class="flex">
           <h5>Post</h5>
-          <!-- <input
-            placeholder="Category"
-            :value="category"
-            name="category"
-            type="category"
-            v-on:input="handleFormChange"
-          /> -->
+
           <select
             name="category"
             :value="category"

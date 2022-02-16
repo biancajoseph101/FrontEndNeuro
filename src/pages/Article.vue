@@ -69,7 +69,8 @@ button {
   border: 3px solid;
   color: white;
 }
-button:hover {
+button:hover,
+.source:hover {
   background-color: #f3f3f3;
   color: rgb(32, 90, 107);
   cursor: pointer;

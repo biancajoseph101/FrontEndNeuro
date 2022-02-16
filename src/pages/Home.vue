@@ -1,7 +1,6 @@
 <template>
   <div>
     <div class="header">
-      <!-- <img class="brain-pic" src="https://i.imgur.com/RBYkJmr.jpg" /> -->
       <h5 class="intro">Welcome to NeuroNerd</h5>
       <h2 class="welcome">
         Explore the Brain <br />
@@ -36,7 +35,6 @@ export default {
         { image: 'https://i.imgur.com/NT6w1Ih.jpg' },
         { image: 'https://i.imgur.com/V4Ryul8.jpg' },
         { image: 'https://i.imgur.com/2INuJiB.jpg' },
-
         { image: 'https://i.imgur.com/5gA4zSC.jpg' },
         { image: 'https://i.imgur.com/LjvZicZ.jpg' },
         { image: 'https://i.imgur.com/t01bQdt.jpg' },
