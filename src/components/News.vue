@@ -77,7 +77,7 @@ export default {
   methods: {
     async getNews() {
       const res = await axios.get(
-        `http://newsapi.org/v2/everything?q=neuroscience&apiKey=${API_KEY}`
+        `https://newsapi.org/v2/everything?q=neuroscience&apiKey=${API_KEY}`
       );
       this.news = res.data.articles;
       // console.log(this.news);
