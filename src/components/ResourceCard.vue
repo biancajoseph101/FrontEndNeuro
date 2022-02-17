@@ -46,6 +46,7 @@
 
 <script>
 import axios from 'axios';
+import { BASE_URL } from '../globals.js';
 export default {
   name: 'ResourceCard',
   data: () => ({
@@ -60,15 +61,12 @@ export default {
   },
   methods: {
     async deleteResource() {
-      await axios.delete(
-        `http://localhost:8000/resources/${this.resource_card.id}`,
-        {
-          auth: {
-            email: 'nerd@nerd.nerd',
-            password: 'nerdpassword'
-          }
+      await axios.delete(`${BASE_URL}resources/${this.resource_card.id}`, {
+        auth: {
+          email: 'nerd@nerd.nerd',
+          password: 'nerdpassword'
         }
-      );
+      });
       this.$emit('handleDelete', this.resource_card.id);
     },
     handleFormChange(e) {
@@ -84,13 +82,13 @@ export default {
     async updateResource(e) {
       e.preventDefault();
       const response = await axios.get(
-        `http://localhost:8000/resources/${this.resource_card.id}`
+        `${BASE_URL}resources/${this.resource_card.id}`
       );
       const list = response.data.resource_type;
       console.log(list);
 
       const res = await axios.put(
-        `http://localhost:8000/resources/${this.resource_card.id}`,
+        `${BASE_URL}resources/${this.resource_card.id}`,
         {
           showForm: true,
           topic: this.newTopic,

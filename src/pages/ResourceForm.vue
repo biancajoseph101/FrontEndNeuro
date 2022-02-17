@@ -71,6 +71,7 @@
 
 <script>
 import axios from 'axios';
+import { BASE_URL } from '../globals.js';
 export default {
   name: 'ResourceForm',
   data: () => ({
@@ -87,7 +88,7 @@ export default {
   },
   methods: {
     async getResourceTypes() {
-      const res = await axios.get(`http://localhost:8000/resourcetypes/`);
+      const res = await axios.get(`${BASE_URL}resourcetypes/`);
       this.resourceTypes = res.data;
     },
 
@@ -111,7 +112,7 @@ export default {
       e.preventDefault();
 
       const res = await axios.post(
-        `http://localhost:8000/resources/`,
+        `${BASE_URL}resources/`,
         {
           resource_type: this.resource_type,
           topic: this.topic,

@@ -26,6 +26,7 @@
 </template>
 
 <script>
+import { BASE_URL } from '../globals.js';
 import axios from 'axios';
 export default {
   name: 'Article',
@@ -39,7 +40,7 @@ export default {
   },
   methods: {
     async getTags() {
-      const res = await axios.get(`http://localhost:8000/posts/`);
+      const res = await axios.get(`${BASE_URL}}posts/`);
       this.tag_array = res.data;
       // console.log(this.tag_array);
     }

@@ -60,6 +60,7 @@
 
 <script>
 import axios from 'axios';
+import { BASE_URL } from '../globals.js';
 export default {
   name: 'Post',
   data: () => ({
@@ -76,7 +77,7 @@ export default {
   },
   methods: {
     async getTags() {
-      const res = await axios.get(`http://localhost:8000/tags/`);
+      const res = await axios.get(`${BASE_URL}tags/`);
       this.tags = res.data;
     },
 
@@ -86,7 +87,7 @@ export default {
     async handleSubmit(e) {
       e.preventDefault();
       const res = await axios.post(
-        `http://localhost:8000/posts/`,
+        `${BASE_URL}posts/`,
         {
           title: this.title,
           content: this.content,

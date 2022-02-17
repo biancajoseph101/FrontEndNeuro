@@ -22,6 +22,7 @@
 
 <script>
 import axios from 'axios';
+import { BASE_URL } from '../globals.js';
 import ResourceCard from '../components/ResourceCard.vue';
 export default {
   name: 'ResourceType',
@@ -38,7 +39,7 @@ export default {
   methods: {
     async getResourceDetails() {
       let id = parseInt(this.$route.params.resource_id);
-      const res = await axios.get(`http://localhost:8000/resourcetypes/${id}`);
+      const res = await axios.get(`${BASE_URL}resourcetypes/${id}`);
       // console.log(res.data.resource_list[i].resource_type);
       this.resourceDetails = res.data;
       this.resourceCardList = res.data.resource_list;

@@ -20,6 +20,7 @@
 
 <script>
 import axios from 'axios';
+import { BASE_URL } from '../globals.js';
 export default {
   name: 'ResourceDrop',
   componenets: {},
@@ -35,7 +36,7 @@ export default {
   },
   methods: {
     async getResources() {
-      const res = await axios.get(`http://localhost:8000/resourcetypes/`);
+      const res = await axios.get(`${BASE_URL}resourcetypes/`);
       this.resources = res.data;
     },
     selectResource(id) {
