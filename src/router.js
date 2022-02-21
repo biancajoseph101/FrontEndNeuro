@@ -15,7 +15,7 @@ const routes = [
   { path: '/createpost', component: Post, name: 'Post' },
   { path: '/createresource', component: ResourceForm, name: 'ResourceForm' },
   { path: '/news', component: News, name: 'News' },
-  { path: '/articles', component: Article, name: 'Article' },
+  { path: '/posts', component: Article, name: 'Article' },
   { path: '/about', component: About, name: 'About' },
 
   { path: '/resourcedrop', component: ResourceDrop, name: 'ResourceDrop' },

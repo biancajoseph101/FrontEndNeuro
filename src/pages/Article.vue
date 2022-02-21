@@ -40,7 +40,7 @@ export default {
   },
   methods: {
     async getTags() {
-      const res = await axios.get(`${BASE_URL}articles/`);
+      const res = await axios.get(`${BASE_URL}posts/`);
       this.tag_array = res.data;
       // console.log(this.tag_array);
     }
